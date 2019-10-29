@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>GifTastic!</title>
+    <title>GifTastic</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> -->
@@ -18,25 +18,20 @@
 <body>
 
     <div class="container">
-        <h1>Movie Search</h1>
-
-        <!-- Rendered Buttons will get Dumped Here  -->
         <div id="buttons-view"></div>
-
-        <form id="movie-form">
-            <label for="movie-input">Add a Movie, Yo!</label>
-            <input type="text" id="movie-input">
+        <form id="gif-form">
+            <label for="gif-input">Add your favorite anime!:</label>
             <br>
-
-            <!-- Button triggers new movie to be added -->
-            <input id="add-movie" type="submit" value="Add a Movie, Yo!">
+            <input type="text" id="gif-input">
+            <br>
+            <br>
+            <input id="add-gif" type="submit" value="Submit">
         </form>
-
-        <!-- Movies will Get Dumped Here -->
-        <div id="movies-view"></div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+        <!-- <div id="movies-view"></div> -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="../GifTastic/assets/app.js"></script>
 
 </body>
 
