@@ -1,0 +1,23 @@
+.col-8 {
+    margin-top: 1%;
+}
+
+.col-4 {
+    float: right;
+}
+
+button {
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+}
+
+label {
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+}
+
+input {
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
