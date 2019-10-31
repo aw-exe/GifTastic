@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gif-tastic</title>
+    <!--Link to Flavicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Masonry Layout Library -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- Link to my CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!-- Div to hold buttons -->
+<div class="container">
+	<div class="jumbotron text-center" id="jumbotron">
+		<h1 id="title">It's Fight Time!<img src="giphy_logo_sm.png"></h1>
+		<h5>Click a button to enjoy some Giphy Goodness! Click any of the images to see them in motion.</h5>
+		<h5>Search for your favorite Martial Art... or cats. Whatever.</h5>
+		<h3>We don't judge.</h3>
+		<br><br>
+    	<div class="container">
+			<div class="row">
+				<div class="col-xs-9">
+					<div class="btn-group" role="group" id="newButtonDiv">
+        
+            			<!--<button type="button" class="btn btn-default"></button>-->
+        			</div>
+        		</div>
+				<div class="col-xs-2">	
+                	<!--<div class="input-group stylish-input-group btn-group btn-sm">-->
+                    	<input type="text" class="form-control"  placeholder="Search" >
+            	</div>
+            	<div class="col-xs-1">
+                    		<!--<span class="input-group-addon">-->
+                    			<input class="btn btn-default" type="button" value="Search" id="searchBtn">
+                        		<!--<button type="submit" class="btn-xs btn-group">-->
+                            		<!--<span class="glyphicon glyphicon-search" aria-hidden="true"></span>-->
+                        		<!--</button>--> 
+                    		<!--</span>-->
+                	<!--</div>-->
+            		
+        		</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Div to hold images -->
+	<div class="container">
+		<div class="grid">
+			<div id="imageHolder">
+			
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="giftastic.js"></script>
+
+</html>
