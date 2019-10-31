@@ -53,18 +53,25 @@
                 });
         });
 
-        $("#gifs-appear-here").on("click", function() {
+        //Pause & resume the animation with mouse interactions.
+
+        $("img").on("hover", function() {
+
+            $(this).pause();
+        },function(){
+            $(this).resume();
+        });
             
-            const state = $(this).attr("data-state");
+            //$("img").on("click", function() {
+            // const state = $(this).attr("data-state");
         
-            if (state === "still") {
-              $(this).attr("src", $(this).attr("data-animate"));
-              $(this).attr("data-state", "animate");
-            } else {
-              $(this).attr("src", $(this).attr("data-still"));
-              $(this).attr("data-state", "still");
-            }
-          });
+            // if (state === "still") {
+            //   $(this).attr("src", $(this).attr("data-animate"));
+            //   $(this).attr("data-state", "animate");
+            // } else {
+            //   $(this).attr("src", $(this).attr("data-still"));
+            //   $(this).attr("data-state", "still");
+        
 
 
     });
