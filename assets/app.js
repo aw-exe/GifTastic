@@ -16,13 +16,14 @@
 
         $("#add-gif").on("click", function (event) {
             event.preventDefault();
-            const anime = $("#gif-input").val().trim();
-            anime.push(animeDiv);
-            createButton();
+            const input = $("#gif-input").val().trim();
+            anime.push(input);
+            createButtons();
             return false;
         });
 
-        $("button").on("click", function () {
+        $(document).on("click", "button", function () {
+            $("#gifs-appear-here").empty();
             const anime = $(this).attr("data-anime");
             const queryURL = `https://api.giphy.com/v1/gifs/search?api_key=5mbxP8vtVpkXaz1OIUCSLAtrfOVnab7J&q=${anime}&limit=10&offset=0&rating=PG&lang=en`;
 
@@ -71,7 +72,8 @@
             // } else {
             //   $(this).attr("src", $(this).attr("data-still"));
             //   $(this).attr("data-state", "still");
-        
+
+        createButtons();
 
 
     });
