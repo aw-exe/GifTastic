@@ -44,34 +44,11 @@
                         animeImage.attr("src", results[i].images.fixed_height.url);
                         animeDiv.append(p);
                         animeDiv.append(animeImage);
-                        // animeDiv.addClass("animeDiv img-thumbnail grid-item");
-                        // animeDiv.attr("src", response.data[i].images.fixed_width_still.url);
-                        // animeDiv.attr("data-state", "still");
-                        // animeDiv.attr("data-still", response.data[i].images.fixed_height.url);
-                        // animeDiv.attr("data-animate", response.data[i].images.fixed_height.url);
                         $("#gifs-appear-here").prepend(animeDiv);
                     }
                 });
         });
 
-        //Pause & resume the animation with mouse interactions.
-
-        $("img").on("hover", function() {
-
-            $(this).pause();
-        },function(){
-            $(this).resume();
-        });
-            
-            //$("img").on("click", function() {
-            // const state = $(this).attr("data-state");
-        
-            // if (state === "still") {
-            //   $(this).attr("src", $(this).attr("data-animate"));
-            //   $(this).attr("data-state", "animate");
-            // } else {
-            //   $(this).attr("src", $(this).attr("data-still"));
-            //   $(this).attr("data-state", "still");
 
         createButtons();
 
