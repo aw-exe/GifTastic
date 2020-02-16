@@ -1,4 +1,4 @@
-# Project Title
+# GifTastic
 
 This was my sixth assignment of the boot camp, we were to build Gif generator using the Giphy API.
 
